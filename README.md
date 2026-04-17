@@ -80,17 +80,23 @@ We welcome contributors passionate about:
 * Strengthen identity and belonging across generations
 
 ---
-##🏆 NSoC 2026 Project Selection
-We are excited to announce that this project has been officially selected for Nexus Spring of Code 2026 (NSoC '26).
+## 🏆 NSoC 2026 Project Selection
 
-As a Project Kernel, this project will be actively maintained and scaled during the program with support from contributors and the open-source community.
+We are excited to announce that **Parampara** has been officially selected for **Nexus Spring of Code 2026 (NSoC '26)** 🚀
 
-#🎯 Highlights
-Officially selected for NSoC 2026
-Contributor phase starts from 15 April
-Open-source mentorship and collaboration
-Active issue tracking and contributor support
-We welcome contributors to participate and improve this project. Explore Program: https://www.nsoc.in/projects
+As a **Project Kernel**, Parampara will be actively developed, maintained, and scaled throughout the program with the support of contributors, mentors, and the open-source community.
+
+## 🎯 Highlights
+
+- 🌟 Officially selected for **NSoC 2026**
+- 📅 Contributor phase starts from **15 April 2026**
+- 🤝 Open-source mentorship and collaboration
+- 🛠️ Active issue tracking and contributor support
+- 🌍 Real-world impact through open source
+
+We welcome contributors to be part of this journey.
+
+🔗 [Explore NSoC Projects](https://www.nsoc.in/projects)
 
 ---
 
