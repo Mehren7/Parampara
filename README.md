@@ -1,4 +1,3 @@
-# Parampara
 # 🌏 Parampara
 
 ### Connecting Diaspora with Heritage | Empowering Indian Women
@@ -79,6 +78,19 @@ We welcome contributors passionate about:
 * Empower Indian women with sustainable, flexible income
 * Preserve and share cultural knowledge globally
 * Strengthen identity and belonging across generations
+
+---
+##🏆 NSoC 2026 Project Selection
+We are excited to announce that this project has been officially selected for Nexus Spring of Code 2026 (NSoC '26).
+
+As a Project Kernel, this project will be actively maintained and scaled during the program with support from contributors and the open-source community.
+
+#🎯 Highlights
+Officially selected for NSoC 2026
+Contributor phase starts from 15 April
+Open-source mentorship and collaboration
+Active issue tracking and contributor support
+We welcome contributors to participate and improve this project. Explore Program: https://www.nsoc.in/projects
 
 ---
 
