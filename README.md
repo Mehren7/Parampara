@@ -54,6 +54,26 @@ With:
 * Payments: Razorpay / Stripe
 * Video Integration: WebRTC / Zoom API
 
+---
+
+## 🚀 Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open `http://localhost:3000` in your browser.
+
+This repository now includes a starter Next.js app with:
+
+* Landing page and instructor marketplace
+* Instructor profile pages
+* Sample API routes for instructors and bookings
+* Tailwind CSS styling
 
 ---
 
