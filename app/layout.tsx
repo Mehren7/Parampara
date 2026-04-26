@@ -1,25 +1,18 @@
+import { ThemeProvider } from "../lib/core/theme_provider";
+import Navbar from "../components/Navbar";
 import "./globals.css";
-import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Parampara",
-  description:
-    "Connect diaspora learners with Indian women instructors for language and culture sessions.",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      {/* 1. bg-white dark:bg-gray-950 handles the background 
+          2. text-gray-900 dark:text-gray-100 handles the text color 
+      */}
+      <body className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+        <ThemeProvider>
+          <Navbar />
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
