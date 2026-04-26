@@ -8,16 +8,27 @@ type PageProps = {
 export default function InstructorProfilePage({ params }: PageProps) {
   const instructor = instructors.find((item) => item.id === params.id);
 
+  const backButtonClasses = "inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-600 shadow-sm transition-all hover:bg-slate-50 hover:text-violet-700 hover:border-violet-200";
+
   if (!instructor) {
     return (
       <main className="mx-auto max-w-4xl px-6 py-16 lg:px-8">
-        <p className="text-center text-xl font-semibold text-slate-800">Instructor not found.</p>
+        <Link href="/instructors" className={backButtonClasses}>
+          <span className="text-lg">←</span> Back to Instructors
+        </Link>
+        <p className="mt-8 text-center text-xl font-semibold text-slate-800">Instructor not found.</p>
       </main>
     );
   }
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12 lg:px-8">
+      <div className="mb-8">
+        <Link href="/instructors" className={backButtonClasses}>
+          <span className="text-lg">←</span> Back to all mentors
+        </Link>
+      </div>
+
       <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
