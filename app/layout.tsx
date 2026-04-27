@@ -1,3 +1,5 @@
+import { ThemeProvider } from "../lib/core/theme_provider";
+import Navbar from "../components/Navbar";
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import Navbar from "@/components/Navbar";

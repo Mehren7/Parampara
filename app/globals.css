@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 :root {
+  --bg-start: #ffffff;
+  --bg-end: #f8f5ff;
+  --text-primary: #111827;
+  --border-color: #e5e7eb;
+  
   color-scheme: light;
   font-family: 'Inter', sans-serif;
+}
+
+.dark {
+  --bg-start: #0f172a; 
+  --bg-end: #020617;  
+  --text-primary: #f1f5f9;
+  --border-color: #1e293b;
+
+  color-scheme: dark;
 }
 
 html {
@@ -14,8 +28,10 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f5ff 100%);
-  color: #111827;
+  background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  color: var(--text-primary);
+  
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 * {
@@ -32,4 +48,13 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-color);
+}
+
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.5);
 }
