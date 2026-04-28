@@ -217,7 +217,7 @@ export default function AboutPage() {
               Indian arts and wisdom.
             </p>
             <Link
-              href="#contact"
+              href="/become-an-instructor"
               className="inline-block bg-violet-600 text-white font-semibold px-4 py-2 rounded-full hover:bg-violet-700 transition-colors text-sm"
             >
               Become an Instructor
