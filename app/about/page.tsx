@@ -4,12 +4,12 @@ export default function AboutPage() {
   return (
     <main className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
       {/* Hero Section */}
-      <section className="rounded-[2rem] bg-gradient-to-br from-violet-50 via-violet-50 to-white p-8 mb-12">
+      <section className="rounded-[2rem] bg-gradient-to-br from-violet-50 via-violet-50 to-white dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 p-8 mb-12 transition-colors duration-300 border border-transparent dark:border-slate-800">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            About <span className="text-violet-600">Parampara</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-slate-50 mb-4 leading-tight">
+            About <span className="text-violet-600 dark:text-violet-400">Parampara</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
             A living bridge between tradition and technology — enabling culture
             to thrive across borders, while creating real economic opportunity
             for Indian women.
@@ -20,10 +20,10 @@ export default function AboutPage() {
       {/* Problem Section */}
       <section className="mb-12">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-slate-100 mb-2">
             The Problem We're Solving
           </h2>
-          <p className="text-gray-500 text-sm max-w-xl mx-auto">
+          <p className="text-gray-500 dark:text-slate-400 text-sm max-w-xl mx-auto">
             Millions of Indians abroad are losing touch with their roots. At the
             same time, skilled women in India lack platforms to reach a global
             audience.
@@ -50,13 +50,13 @@ export default function AboutPage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="bg-violet-50 border border-violet-100 rounded-3xl p-6"
+              className="bg-violet-50 dark:bg-slate-800/50 border border-violet-100 dark:border-slate-700 rounded-3xl p-6 transition-colors duration-300"
             >
               <div className="text-3xl mb-3">{item.icon}</div>
-              <h3 className="font-semibold text-gray-900 mb-2 text-lg">
+              <h3 className="font-semibold text-gray-900 dark:text-slate-100 mb-2 text-lg">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-slate-400 text-sm leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -65,12 +65,12 @@ export default function AboutPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="mb-12 rounded-3xl bg-violet-50 border border-violet-100 p-8">
+      <section className="mb-12 rounded-3xl bg-violet-50 dark:bg-slate-800/30 border border-violet-100 dark:border-slate-800 p-8 transition-colors duration-300">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-slate-100 mb-2">
             Our Solution
           </h2>
-          <p className="text-gray-500 text-sm max-w-xl mx-auto">
+          <p className="text-gray-500 dark:text-slate-400 text-sm max-w-xl mx-auto">
             Parampara is a digital marketplace that connects verified women
             instructors from India with global learners seeking real cultural
             experiences.
@@ -102,14 +102,14 @@ export default function AboutPage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="flex gap-4 bg-white rounded-3xl p-5 border border-violet-100 shadow-sm"
+              className="flex gap-4 bg-white dark:bg-slate-900 rounded-3xl p-5 border border-violet-100 dark:border-slate-700 shadow-sm transition-colors duration-300"
             >
               <div className="text-3xl shrink-0">{item.icon}</div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">
+                <h3 className="font-semibold text-gray-900 dark:text-slate-100 mb-1">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 dark:text-slate-400 text-sm leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -121,10 +121,10 @@ export default function AboutPage() {
       {/* Impact Vision Section */}
       <section className="mb-12">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-slate-100 mb-4">
             🌱 Our Impact Vision
           </h2>
-          <p className="text-gray-500 text-sm max-w-xl mx-auto mb-10">
+          <p className="text-gray-500 dark:text-slate-400 text-sm max-w-xl mx-auto mb-10">
             We measure success not just in users, but in lives changed and
             cultures preserved.
           </p>
@@ -150,11 +150,11 @@ export default function AboutPage() {
           ].map((item) => (
             <div
               key={item.label}
-              className="bg-gradient-to-b from-violet-50 to-white border border-violet-100 rounded-3xl p-6"
+              className="bg-gradient-to-b from-violet-50 to-white dark:from-slate-800 dark:to-slate-900 border border-violet-100 dark:border-slate-700 rounded-3xl p-6 transition-colors duration-300"
             >
               <div className="text-4xl mb-3">{item.stat}</div>
-              <h3 className="font-semibold text-gray-900 mb-2">{item.label}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <h3 className="font-semibold text-gray-900 dark:text-slate-100 mb-2">{item.label}</h3>
+              <p className="text-gray-500 dark:text-slate-400 text-sm leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -162,25 +162,25 @@ export default function AboutPage() {
         </div>
 
         {/* Vision Quote */}
-        <div className="bg-violet-600 text-white rounded-3xl px-8 py-8 text-center shadow-lg">
+        <div className="bg-violet-600 dark:bg-violet-900 text-white rounded-3xl px-8 py-8 text-center shadow-lg transition-colors duration-300">
           <p className="text-lg md:text-xl font-medium leading-relaxed italic mb-4">
             "Parampara is not just a platform — it's a living bridge between
             tradition and technology, enabling culture to thrive across
             borders."
           </p>
-          <cite className="text-violet-200 text-sm not-italic font-medium">
+          <cite className="text-violet-200 dark:text-violet-300 text-sm not-italic font-medium">
             — Parampara Vision Statement
           </cite>
         </div>
       </section>
 
       {/* Join Our Community Section */}
-      <section className="rounded-3xl bg-violet-50 border border-violet-100 p-8">
+      <section className="rounded-3xl bg-violet-50 dark:bg-slate-800/30 border border-violet-100 dark:border-slate-800 p-8 transition-colors duration-300">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-slate-100 mb-2">
             🌟 Join the Parampara Community
           </h2>
-          <p className="text-gray-500 text-sm max-w-xl mx-auto">
+          <p className="text-gray-500 dark:text-slate-400 text-sm max-w-xl mx-auto">
             Whether you're looking to reconnect with your roots or share your
             cultural expertise, Parampara welcomes you to our growing community
             of learners and instructors.
@@ -188,37 +188,37 @@ export default function AboutPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-white rounded-3xl p-6 border border-violet-100 shadow-sm">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-violet-100 dark:border-slate-700 shadow-sm transition-colors duration-300">
             <div className="text-4xl mb-4">🎓</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-100 mb-2">
               For Learners
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            <p className="text-gray-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
               Discover authentic Indian culture through live sessions with
               verified women instructors. Learn language, cooking, dance, and
               traditions from the comfort of your home.
             </p>
             <Link
               href="/instructors"
-              className="inline-block bg-violet-600 text-white font-semibold px-4 py-2 rounded-full hover:bg-violet-700 transition-colors text-sm"
+              className="inline-block bg-violet-600 dark:bg-violet-700 text-white font-semibold px-4 py-2 rounded-full hover:bg-violet-700 dark:hover:bg-violet-600 transition-colors text-sm"
             >
               Find Instructors
             </Link>
           </div>
 
-          <div className="bg-white rounded-3xl p-6 border border-violet-100 shadow-sm">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-violet-100 dark:border-slate-700 shadow-sm transition-colors duration-300">
             <div className="text-4xl mb-4">👩‍🏫</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-100 mb-2">
               For Instructors
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            <p className="text-gray-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
               Share your cultural knowledge and skills with a global audience.
               Earn flexible income while preserving and teaching traditional
               Indian arts and wisdom.
             </p>
             <Link
               href="#contact"
-              className="inline-block bg-violet-600 text-white font-semibold px-4 py-2 rounded-full hover:bg-violet-700 transition-colors text-sm"
+              className="inline-block bg-violet-600 dark:bg-violet-700 text-white font-semibold px-4 py-2 rounded-full hover:bg-violet-700 dark:hover:bg-violet-600 transition-colors text-sm"
             >
               Become an Instructor
             </Link>
@@ -226,12 +226,12 @@ export default function AboutPage() {
         </div>
 
         <div className="text-center">
-          <p className="text-gray-600 text-sm mb-4">
+          <p className="text-gray-600 dark:text-slate-400 text-sm mb-4">
             Ready to start your cultural journey?
           </p>
           <Link
             href="/instructors"
-            className="inline-block bg-violet-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-violet-700 transition-colors duration-200 shadow-sm"
+            className="inline-block bg-violet-600 dark:bg-violet-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-violet-700 dark:hover:bg-violet-600 transition-colors duration-200 shadow-sm"
           >
             Explore Classes →
           </Link>

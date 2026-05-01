@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Providers } from "@/components/Providers";
+import { ThemeProvider } from "@/components/ThemeProvider"; 
 
 // Enhanced SEO metadata with Open Graph and Twitter cards
 export const metadata: Metadata = {
@@ -55,7 +56,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  colorScheme: "light",
+  colorScheme: "light dark", // <--- Updated for dark mode support
 };
 
 export default function RootLayout({
@@ -69,12 +70,19 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#7c3aed" />
       </head>
-      <body className="flex flex-col min-h-screen font-sans antialiased">
-        <Providers>
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </Providers>
+      <body className="flex flex-col min-h-screen font-sans antialiased bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 transition-colors duration-300">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Providers>
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );
