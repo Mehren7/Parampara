@@ -1,9 +1,63 @@
-node_modules
-.next
-out
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-coverage
-.env*
+pnpm-debug.log*
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# logs
+logs
+*.log
+
+# OS generated files
+Thumbs.db
+
+# package manager locks (optional - keep only one if needed)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# turbo
+.turbo
+
+# eslint cache
+.eslintcache
+
+# stylelint cache
+.stylelintcache

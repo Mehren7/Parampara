@@ -2,7 +2,7 @@
 
 import { Toaster } from "react-hot-toast";
 import NextTopLoader from "nextjs-toploader";
-import { ScrollToTop } from "./ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
